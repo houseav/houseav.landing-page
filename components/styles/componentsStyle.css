@@ -1,0 +1,32 @@
+/* styles/globals.css */
+:root {
+    --font-optiBubbleDoubleBold: 'OPTIBubbleDoubleBold', sans-serif;
+    --font-patinioBasica: 'Patinio Basica', serif;
+    --font-rollcage: 'Rollcage', sans-serif;
+  }
+  
+  @font-face {
+    font-family: 'OPTIBubbleDoubleBold';
+    src: url('../../public/assets/fonts/OPTIBubbleDoubleBold/OPTIBubbleDoubleBold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Patinio Basica';
+    src: url('../../public/assets/fonts/Patinio-Basica/PatinioBasica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Rollcage';
+    src: url('../../public/assets/fonts/Rollcage/Rollcage.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @import 'tailwindcss/base';
+  @import 'tailwindcss/components';
+  @import 'tailwindcss/utilities';
+  
