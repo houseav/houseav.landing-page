@@ -1,5 +1,11 @@
-const Button = ({ text }: { text: string }) => {
-  return <button className="text-white bg-black py-2 px-3 rounded-lg cursor-pointer">{text}</button>;
+type ButtonProps = {
+  text: string;
+
+  onClick?: () => void;
+};
+
+const Button = ({ text, onClick }: ButtonProps) => {
+  return <button onClick={onClick}>{text}</button>;
 };
 
 export default Button;

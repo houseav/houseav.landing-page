@@ -20,8 +20,14 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
+        <title>{String(metadata.title) || "houseav."}</title>
+        <meta
+          name="description"
+          content={
+            String(metadata.description) ||
+            "Houseav is a platform for hosting brothers."
+          }
+        />
       </Head>
       <body className={twMerge(dmSans.className, "antialiased")}>
         {children}

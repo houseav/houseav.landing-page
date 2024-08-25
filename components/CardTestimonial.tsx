@@ -1,7 +1,19 @@
 import React from "react";
 import Image from "next/image";
 
-export default function CardTestimonial({ avatar, message, user, name }) {
+interface CardTestimonialProps {
+  avatar: any;
+  message: any;
+  user: any;
+  name: any;
+}
+
+export default function CardTestimonial({
+  avatar,
+  message,
+  user,
+  name,
+}: CardTestimonialProps) {
   return (
     <div className="shadow-xl w-[310px] rounded-2xl p-8">
       <div className="font-medium pb-4">{message}</div>

@@ -59,7 +59,11 @@ const Confetti = forwardRef<ConfettiRef, Props>((props, ref) => {
   );
 
   const fire = useCallback(
-    (opts = {}) => instanceRef.current?.({ ...options, ...opts }),
+    (opts = {}) => {
+      if (instanceRef.current) {
+        confetti({ ...options, ...opts });
+      }
+    },
     [options]
   );
 
