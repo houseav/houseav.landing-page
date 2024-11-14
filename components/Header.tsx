@@ -13,6 +13,12 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleRedirect = () => {
+    setTimeout(() => {
+      window.location.href = "https://houseavfrontend-production.up.railway.app/sign-in";
+    }, 1000); // 1500 milliseconds
+  };
+
   return (
     <header className="flex justify-between items-center px-6 py-4 backdrop-blur-md sticky top-0 z-20 bg-gradient-to-r from-[#fdfeff]/50 to-[#FFFFFF]/50">
       <Image
@@ -47,7 +53,7 @@ const Header = () => {
           <li>
             <a href="#footer">Contacts</a>
           </li>
-          <div className="relative">
+          <div className="relative" onClick={handleRedirect}>
             <ConfettiButton>Login</ConfettiButton>
           </div>
         </ul>

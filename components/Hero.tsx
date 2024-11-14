@@ -18,6 +18,12 @@ const Hero = () => {
     offset: ["start end", "end start"],
   });
 
+  const handleRedirect = () => {
+    setTimeout(() => {
+      window.location.href = "https://houseavfrontend-production.up.railway.app/sign-up";
+    }, 1000); // 1500 milliseconds
+  };
+
   const translateYBubble2 = useTransform(scrollYProgress, [0, 1], [10, -350]);
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   const translateX = useTransform(scrollXProgress, [0, 1], [200, -200]);
@@ -48,7 +54,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex items-center gap-3 mt-6 text-lg">
+          <div className="flex items-center gap-3 mt-6 text-lg" onClick={handleRedirect}>
             <ConfettiButton styleType="gray">Sign up</ConfettiButton>
           </div>
         </div>

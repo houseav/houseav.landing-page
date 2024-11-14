@@ -1,6 +1,6 @@
 import Shield from "@/public/assets/shield.png";
 import safeplace from "@/public/assets/safeplace.png";
-import internet from "@/public/assets/internet.png";
+import InternetCT from "@/public/assets/internetCirclesTriangles.png";
 import checker from "@/public/assets/checker.png";
 import Image from "next/image";
 
@@ -43,7 +43,7 @@ const ProductCard = () => {
           </div>
         </div>
         <div className="shadow-2xl rounded-xl flex justify-center items-center flex-col p-8 max-w-[400px] bg-white/30 backdrop-blur-lg hover:scale-105 hover:bg-white/50 hover:border hover:border-gray-300 transition-all duration-300 ease-in-out">
-          <Image src={internet} alt="internet" className="pb-4" />
+          <Image src={InternetCT} alt="internet" className="pb-4" />
           <div className="text-2xl font-bold pb-3 text-center">
             Integration Places
           </div>

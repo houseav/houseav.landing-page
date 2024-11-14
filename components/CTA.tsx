@@ -20,6 +20,12 @@ const CTA = () => {
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
   const translateX = useTransform(scrollXProgress, [0, 1], [50, 200]);
 
+  const handleRedirect = () => {
+    setTimeout(() => {
+      window.location.href = "https://houseavfrontend-production.up.railway.app/sign-up";
+    }, 1000); // 1500 milliseconds
+  };
+
   return (
     <div
       ref={sectionRef}
@@ -51,7 +57,8 @@ const CTA = () => {
           Start your journey with us today and start to connect with others
         </div>
 
-        <div className="relative">
+        
+        <div className="relative" onClick={handleRedirect}>
           <ConfettiButton>Sign up</ConfettiButton>
         </div>
       </div>

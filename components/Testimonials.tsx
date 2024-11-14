@@ -6,8 +6,8 @@ import Avatar1 from "@/public/assets/avatar-1.png";
 import Avatar2 from "@/public/assets/avatar-2.png";
 import Avatar3 from "@/public/assets/avatar-3.png";
 import Avatar4 from "@/public/assets/avatar-4.png";
-import Avatar5 from "@/public/assets/avatar-5.png";
-import Avatar6 from "@/public/assets/avatar-6.jpeg";
+// import Avatar5 from "@/public/assets/avatar-5.png";
+// import Avatar6 from "@/public/assets/avatar-6.jpeg";
 import Avatar7 from "@/public/assets/avatar-7.png";
 import Avatar8 from "@/public/assets/avatar-8.png";
 import Avatar9 from "@/public/assets/avatar-9.png";
@@ -39,13 +39,15 @@ const testimonials = [
   {
     user: "@simone",
     name: "Simone",
-    avatar: Avatar5,
+    // avatar: Avatar5,
+    avatar: Avatar2,
     message: "Can't wait to see how this app will grow in the future!",
   },
   {
     user: "@lucas",
     name: "Lucas",
-    avatar: Avatar6,
+    // avatar: Avatar6,
+    avatar: Avatar4,
     message:
       "Sono certo che houseav. permettera un inizio di collaborazioni tra le chiese per portare il Vangelo a tutti.",
   },
